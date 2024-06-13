@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+#landing {
+  padding: 32px;
+}
+
 nav {
   height: 44px;
   display: flex;
@@ -17,20 +21,21 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 32px 0 0 0;
 }
 
-.logo__container {
+.logo__wrapper {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-.logo {
+.nav__logo {
   height: 40px;
   width: 40px;
   margin: 0 12px 0 0;
 }
 
-.treact__logo {
+.nav__logo--treact {
   font-size: 24px;
   font-weight: 900;
   color: #243e63;
