@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Inter, system-ui;
+  box-sizing: border-box;
+}
+
+nav {
+  height: 44px;
+  display: flex;
+}
+
+.row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 0 0 0;
+}
+
+.logo__container {
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+  margin: 0 12px 0 0;
+}
+
+.treact__logo {
+  font-size: 24px;
+  font-weight: 900;
+  color: #243e63;
+}
+
+
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style-type: none;  
+}
+
+.nav__link {
+  margin: 0 24px;
+  text-decoration: none;
+  color: #243e63;
+
+}
+
+.nav__link--login {
+  margin: 0 24px 0 48px;
+}
+
+.nav__link--sign-up {
+  background-color: rgb(100 21 255);
+  color: white;
+  text-decoration: none;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 9999px;
+}
+
+.nav__link,
+.nav__link--sign-up {
+  font-weight: 600;
+
+}
+
+.purple {
+  color: #6415ff;
+}
+
+.header__h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1A202c;
+}
+
+.subheader {
+  font-size: 16px;
+  color: #243e63;
+}
+ 
+
