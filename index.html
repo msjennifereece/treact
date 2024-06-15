@@ -1,65 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <section id="landing">
-    <nav>
-     <div class="row">
-        <div class="logo__wrapper">
-          <img src="./assets/logo.svg" class="nav__logo"alt=""><div class="nav__logo--treact">Treact</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section id="landing">
+      <nav>
+        <div class="nav__row row">
+          <div class="logo__wrapper">
+            <img class="nav__logo" src="./assets/logo.svg" alt="" />
+            <div class="treact__logo">Treact</div>
+          </div>
+          <ul class="nav__links">
+            <li><a href="#" class="nav__link">About</a></li>
+            <li><a href="#" class="nav__link">Blog</a></li>
+            <li><a href="#" class="nav__link">Pricing</a></li>
+            <li><a href="#" class="nav__link">Contact Us</a></li>
+            <li><a href="#" class="nav__link--login">Login</a></li>
+            <li><a href="#" class="nav__link--sign-up">Sign Up</a></li>
+          </ul>
         </div>
-      <ul class="nav__links">
-        <li>
-          <a href="#" 
-          class="nav__link">About</a>
-        </li>
-        <li>
-          <a href="#" 
-          class="nav__link">Blog</a>
-        </li>
-        <li>
-          <a href="#" 
-          class="nav__link">Pricing</a>
-        </li>
-        <li>
-          <a href="#" 
-          class="nav__link">Contact Us</a>
-        </li>
-        <li>
-          <a href="#" 
-          class="nav__link nav__link--login">Login</a>
-        </li>
-        <li>
-          <a href="#" 
-          class="nav__link--sign-up">Sign Up</a>
-        </li>
-      </ul>
-      </div>
-     </div>
-    </nav>
-
-    <header>
-      <div class="row">
-        <div class="header__description">
-          <h1 class="header__h1">Beautiful React Templates <span class="purple">for you</span></h1>
-          <p class="subheader">Our templates are easy to setup, understand and customize. Fully modular components with a ariety of pages and components.</p>
-            <form action="">
-              <input type="text" placeholder="Your E-mail Address">
-              <button>Get Started</button>
-            </form>
-          <p>OUR TRUSTED CUSTOMERS</p>
-          <img src="./assets/header-img-1.png" alt="Our Customers">
+      </nav>
+      <header>
+        <div class="container">
+          <div class="header__row row">
+            <div class="header__description">
+              <h1>Beautiful React Templates <span class="purple">for you.</span></h1>
+              <p class="header__para">
+                Our templates are easy to setup, understand and customize. Fully
+                modular components with a variety of pages and components.
+              </p>
+              <div class="input__form">
+                <input type="text" placeholder="Your E-mail Address">
+                <button class="header__get-started--button">Get Started</button>
+              </div>
+              <div class="two__column">
+                <p class="customer__para">OUR TRUSTED CUSTOMERS</p>
+                <img src="./assets/header-img-1.png"
+                class="header__img-1" alt="">
+              </div>
+            </div>
+            <figure class="header__img--wrapper-2">
+              <img class="header__img-2" src="./assets/header-img-2.svg" alt="">
+            </figure>
+          </div>
         </div>
-        <figure>
-          <img src="./assets/header-img-2.svg" alt="">
-        </figure>
-      </div>
-    </header>
-  </section>
-</body>
+      </header>
+    </section>
+  </body>
 </html>
