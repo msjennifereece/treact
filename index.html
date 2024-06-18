@@ -10,7 +10,7 @@
   <body>
     <section id="landing">
       <nav>
-        <div class="nav__row">
+        <div class="row nav__row">
           <div class="logo__wrapper">
             <img class="nav__logo" src="./assets/logo.svg" alt="" />
             <div class="treact__logo">Treact</div>
@@ -21,12 +21,14 @@
             <li><a href="#" class="nav__link">Pricing</a></li>
             <li><a href="#" class="nav__link">Contact Us</a></li>
             <li><a href="#" class="nav__link--login">Login</a></li>
-            <li><a href="#" class="nav__link--sign-up">Sign Up</a></li>
+            <li><a href="#" class="nav__link--sign-up btn">Sign Up</a></li>
           </ul>
         </div>
       </nav>
+
+
       <header>
-          <div class="header__row">
+          <div class="row header__row">
             <div class="header__description">
               <h1>
                 Beautiful React Templates <span class="purple">for you.</span>
@@ -60,12 +62,12 @@
 
     <main>
       <section id="features">
-        <div class="container">
+        <div class="container features__container">
           <div class="row">
-            <div class="section__description">
+            <div class="features__description">
               <h5><span class="purple">FEATURES</span></h5>
               <h2>We have Amazing <span class="purple">Service.</span></h2>
-             <p class="features__para">
+             <p class="section__description--para">
                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <div class="service__wrapper">
@@ -95,10 +97,10 @@
                   </div>
                   <div class="text__container">
                     <span class="title">
-                      Secure
+                      24/7 Support
                     </span>
                     <p class="description">
-                      We strictly only deal with vendors that provide top notch security.
+                      Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.
                     </p>
                   </div>
                 </div>
@@ -110,10 +112,55 @@
                   </div>
                   <div class="text__container">
                     <span class="title">
-                      Secure
+                      Customizable
                     </span>
                     <p class="description">
-                      We strictly only deal with vendors that provide top notch security.
+                      Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.
+                    </p>
+                  </div>
+                </div>
+                <div class="service">
+                  <div class="service__img--container">
+                    <div class="service__img">
+                      <i class="fas fa-bolt"></i>
+                    </div>
+                  </div>
+                  <div class="text__container">
+                    <span class="title">
+                      Reliable
+                    </span>
+                    <p class="description">
+                      Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.
+                    </p>
+                  </div>
+                </div>
+                <div class="service">
+                  <div class="service__img--container">
+                    <div class="service__img">
+                      <i class="fas fa-bolt"></i>
+                    </div>
+                  </div>
+                  <div class="text__container">
+                    <span class="title">
+                      Fast
+                    </span>
+                    <p class="description">
+                      Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.
+                    </p>
+                  </div>
+                </div>
+                <div class="service">
+                  <div class="service__img--container">
+                    <div class="service__img">
+                      <i class="fas fa-bolt"></i>
+                    </div>
+                  </div>
+                  <div class="text__container">
+                    <span class="title">
+                      Easy
+                    </span>
+                    <p class="description">
+                      Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.
                     </p>
                   </div>
                 </div>
@@ -125,9 +172,62 @@
         </div>
       </section>
       
-      <section id="quality__work"></section>
+      <section id="quality_work">
+        <div class="container quality_work--container">
+          <div class="quality_work--row">
 
-      <section id="steps"></section>
+            <div class="quality_work__section--description">
+              <h5><span class="purple">QUALITY WORK</span></h5>
+              <h2 class="quality_work--h2">Designed & Developed by <span class="purple">Professionals.</span></h2>
+              <p class="section__description--para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <button class="quality_work--button btn">Learn More</button>
+            </div>
+            <figure class="quality_work__img--wrapper">
+              <img class="quality_work--img" src="./assets/quality-work-img1.png" alt="">
+            </figure>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="steps">
+        <div class="container steps__container">
+          <div class="steps__row">
+
+            <figure class="steps__img--wrapper">
+              <img class="steps__img" src="./assets/steps-img1.png" alt="">
+            </figure>
+            <div class="steps__section--description">
+              <h5><span class="purple">STEPS</span></h5>
+              <h2 class="steps__h2">Easy to <span class="purple">Get Started.</span></h2>
+              <ul class="steps__wrapper">
+                <li class="steps__number--description">
+                  <div class="number">01</div>
+                  <div class="steps__description">
+                    <h6 class="steps__title">Register</h6>
+                    <p class="steps__para">Create an account with us using Google or Facebook.</p>
+                  </div>
+                </li>
+                <li class="steps__number--description">
+                  <div class="number">02</div>
+                  <div class="steps__description">
+                    <h6 class="steps__title">Download</h6>
+                    <p class="steps__para">Browse and Download the template that you like from the marketplace.</p>
+                  </div>
+                </li>
+                <li class="steps__number--description">
+                  <div class="number">03</div>
+                  <div class="steps__description">
+                    <h6 class="steps__title">Run</h6>
+                    <p class="steps__para">Follow the instructions to setup and customize the template to your needs.</p>
+                  </div>
+                </li>
+              </ul>
+          </div>
+
+          </div>
+        </div>
+      </section>
 
       <section id="values"></section>
 
