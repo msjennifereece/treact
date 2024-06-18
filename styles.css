@@ -429,6 +429,9 @@ VALUES
 
 .values__img--wrapper {
   width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .values__row {
