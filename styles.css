@@ -238,6 +238,7 @@ h2 {
 
 
 .services {
+  max-width: 1200px;
   display: flex;
   margin-top: 24px;
   flex-wrap: wrap;
@@ -248,7 +249,8 @@ h2 {
 .service {
   padding: 32px 8px;
   margin: 0 16px;
-  width: calc(100% / 3.5);
+  width: 100%;
+  max-width: 250px;
   height: 100%;
   display: flex;
 }
@@ -295,6 +297,7 @@ QUALITY WORK
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 32px;
 }
 
 .quality_work--container {
@@ -309,7 +312,7 @@ QUALITY WORK
   align-items: flex-start
 }
 
-.quality-work--img {
+.quality_work--img {
   max-width: 100%;
   height: auto;
 }
@@ -505,4 +508,337 @@ VALUES
 
 .values__button {
   margin: 48px 0 0;
+}
+
+/*
+
+PRICING
+
+*/
+
+.pricing__row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pricing__description--center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0 0;
+}
+
+.pricing__h5,
+.pricing__h2,
+.pricing__description--para {
+  text-align: center;
+}
+
+.pricing__h5 {
+  margin: 0 0 16px;
+}
+
+.pricing__description--para {
+  margin: 16px 0 0;
+}
+
+.plans {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ---------Personal-------- */
+.plan__highlight--personal {
+  position: absolute;
+  background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+  left: 0;
+  right: 0;
+  top: 0;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  height: 10px;
+}
+
+.plan {
+  width: 384px;
+  margin: 64px 32px 0 0;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow);
+}
+
+.plan__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.635;
+  padding: 32px 0;
+  border: 1px solid lightgray;
+}
+
+.plan__box1 {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  position: relative;
+}
+
+.name {
+  color: #1a202c;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.price {
+  color: #1a202c;
+  font-size: 48px;
+  font-weight: 700;
+  margin: 4px 0;
+}
+
+.duration {
+  color: #a0aec0;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.main__feature {
+  color: #1a202c;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+}
+
+.feature {
+  color: #718096;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 20px 0 0;
+}
+
+.buy_now__button--personal {
+  width: 100%;
+  max-width: 200px;
+  color: #f7fafc;
+  background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  border-radius: 9999px;
+  border: none;
+  padding: 16px 32px;
+}
+
+.plan__box3 {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+/* ---------Business-------- */
+
+.plan__highlight--enterprise {
+  position: absolute;
+  background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+  left: 0;
+  right: 0;
+  top: 0;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  height: 10px;
+}
+
+.plan__box--business {
+  background-color: #6415ff;
+}
+
+
+
+.buy_now__button--business {
+  width: 100%;
+  max-width: 200px;
+  color: #6415ff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  border-radius: 9999px;
+  border: none;
+  padding: 16px 32px;
+}
+
+/* linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%); */
+
+/* ---------Enterprise-------- */
+.plan__highlight--enterprise {
+  position: absolute;
+  background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+  left: 0;
+  right: 0;
+  top: 0;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  height: 10px;
+}
+
+.name__business {
+  color: #f7fafc;;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.price__business {
+  color: #f7fafc;;
+  font-size: 48px;
+  font-weight: 700;
+  margin: 4px 0;
+}
+
+.duration__business {
+  color: #edf2f7;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.main__feature {
+  color: #f7fafc;;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+}
+
+.feature__business {
+  color: #e2e8f0;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 20px 0 0;
+}
+
+.buy_now__button--enterprise {
+  width: 100%;
+  max-width: 200px;
+  color: #f7fafc;
+  background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  border-radius: 9999px;
+  border: none;
+  padding: 16px 32px;
+}
+
+/*
+
+TESTIMONIALS
+
+*/
+
+.testimonials__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonials__img {
+  width: 100%;
+}
+
+.testimonials__img--wrapper {
+  width: 48%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials__description--right {
+  width: 48%;
+}
+
+.slider {
+  margin-top: 2.5rem;
+}
+
+.testimonials__h2 {
+  margin: 16px 0 0;
+}
+
+.testimonials__para {
+  margin: 24px 0 0;
+}
+
+.yellow__star {
+  color: rgb(246 173 85);
+}
+
+.slider__subheader {
+  color: #243e63;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.customer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.customer__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.slider__para {
+  color: #4a5568;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.625;
+  margin: 16px 0 40px;
+}
+
+.customer__picture {
+  width: 80px;
+  height: 80px;
+  border-radius: 9999px;
+}
+
+.customer__description {
+  margin: 24px;
+}
+
+.customer__h5 {
+  color: #243e63;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.customer__details {
+  color: #7c8ba1;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.arrow__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow__buttons {
+  background-color: #edf2f7;
+  height: 40px;
+  margin: 0 12px;
+  padding: 0 12px;
+  border-radius: 9999px;
+  border: none;
+}
+
+.arrow {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.divider {
+  color: lightgray;
+  margin: 12px;
+}
+
+.left__arrow--button {
+  
 }
