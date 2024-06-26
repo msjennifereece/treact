@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="https://kit.fontawesome.com/03673f4e3f.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <section id="landing">
@@ -23,24 +24,36 @@
             <li><a href="#" class="nav__link--login">Login</a></li>
             <li><a href="#" class="nav__link--sign-up btn">Sign Up</a></li>
           </ul>
-        </div>
-        <button class="btn__menu">
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="menu__backdrop">
-          <button class="btn__menu btn__menu--close">
-            <i class="fas fa-times"></i>
+          <button class="btn__menu" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
           </button>
-          <ul class="menu__links">
-            <li class="menu__list"><a class="menu__list" href="">About</a></li>
-            <li class="menu__list"><a class="menu__list" href="">Blog</a></li>
-            <li class="menu__list"><a class="menu__list" href="">Pricing</a></li>
-            <li class="menu__list"><a class="menu__list" href="">Contact Us</a></li>
-            <li class="menu__list"><a class="menu__list" href="">Login</a></li>
-            <li class="menu__list"><a class="menu__list menu__list--sign-up" href="">Sign Up</a></li>
-          </ul>
+          <div class="menu__backdrop">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="menu__links">
+              <li class="menu__list">
+                <a class="menu__link" onclick="closeMenu()" href="">About</a>
+              </li>
+              <li class="menu__list">
+                <a class="menu__link" onclick="closeMenu()" href="">Blog</a>
+              </li>
+              <li class="menu__list">
+                <a class="menu__link" onclick="closeMenu()" href="">Pricing</a>
+              </li>
+              <li class="menu__list">
+                <a class="menu__link" onclick="closeMenu()" href="">Contact Us</a>
+              </li>
+              <li class="menu__list">
+                <a class="menu__link" onclick="closeMenu()" href="">Login</a>
+              </li>
+              <li class="menu__list">
+                <a class="menu__link menu__list--sign-up" onclick="closeMenu()" href="">Sign Up</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </nav>
+        </nav>
     
 
       <header>
@@ -81,9 +94,9 @@
         <div class="container features__container">
           <div class="row">
             <div class="features__description">
-              <h5><span class="purple">FEATURES</span></h5>
-              <h2>We have Amazing <span class="purple">Service.</span></h2>
-             <p class="section__description--para">
+              <h5 class="features__h5"><span class="purple">FEATURES</span></h5>
+              <h2 class="features__h2">We have Amazing <span class="purple">Service.</span></h2>
+             <p class="features__description--para">
                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <div class="service__wrapper">
@@ -193,7 +206,7 @@
           <div class="quality_work--row row">
 
             <div class="quality_work__section--description">
-              <h5><span class="purple">QUALITY WORK</span></h5>
+              <h5 class="quality_work--h5"><span class="purple">QUALITY WORK</span></h5>
               <h2 class="quality_work--h2">Designed & Developed by <span class="purple">Professionals.</span></h2>
               <p class="section__description--para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               <button class="quality_work--button btn">Learn More</button>
