@@ -205,7 +205,7 @@ input {
   border: 2px solid #00000035;
   width: 100%;
   border-radius: 9999px;
-  border-width: 2px;
+  opacity: 0.5;
 }
 
 .input__form {
@@ -246,6 +246,7 @@ input {
 .header__img-1 {
   margin: 16px 0 0;
   padding: 0 64px 0 0;
+  opacity: 0.5;
 }
 
 .container {
@@ -328,7 +329,7 @@ FEATURES
   padding: 32px 8px;
   margin: 0 16px;
   width: 100%;
-  max-width: 250px;
+  max-width:320px;
   height: 100%;
   display: flex;
 }
@@ -925,7 +926,7 @@ MEDIA
 
 */
 
-@media (max-width: 550px) {
+@media (max-width: 640px) {
   .nav__links {
     display: none;
   }
@@ -933,6 +934,18 @@ MEDIA
   .btn__menu {
     display: block;
   }
+
+  .service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title,
+  .description {
+    text-align: center;
+  }
+
 }
 
 
@@ -947,6 +960,16 @@ MEDIA
     display: block;
   }
 
+  h2 {
+    font-size: 48px;
+    font-weight: 900;
+  }
+
+  h5 {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
   .header__row {
     display: flex;
     flex-direction: column;
@@ -955,6 +978,7 @@ MEDIA
 
   .header__description {
     width: 60%;
+    max-width: 32rem;
   }
 
   h1 {
@@ -984,5 +1008,60 @@ MEDIA
     font-size: 16px;
   }
 
+  .header__img-2 {
+    margin-top: 32px;
+  }
+
+  .values__h2 {
+    font-size: 36px;
+  }
+
+  .values__para {
+    color: #718096;
+    line-height: 1.625;
+  }
   
+  .quality_work--container,
+  .steps__container,
+  .values__container {
+    margin: 0;
+  }
+
+  .affordable__professionalism--wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  .affordable,
+  .professionalism {
+    margin: 40px 32px 0 0;
+  }
+
+  .values__section--description {
+    max-width: 325px;
+  }
+
+  /* PRICING */
+  .plans {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pricing__description--para {
+    color:#7c8ba1;
+    width: 100%;
+    max-width: 577px;
+    line-height: 1.625;
+  }
+
+}
+
+
+
+@media (max-width: 1024px) {
+  .header__h1 {
+    font-size: 30px;
+    }
 }
